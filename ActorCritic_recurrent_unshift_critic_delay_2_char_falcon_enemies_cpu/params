@@ -1,0 +1,39 @@
+{
+  "epsilon": 0.005,
+  "sweeps": 1,
+  "batch_size": 64,
+  "batch_steps": 1,
+  "max_buffer": 64,
+  "min_collect": 32,
+  "reward_halflife": 4,
+  "core_layers": [
+    256
+  ],
+  "actor_layers": [
+    128
+  ],
+  "critic_layers": [
+    128
+  ],
+  "entropy_scale": 0.001,
+  "recurrent": true,
+  "initial": "train",
+  "gae_lambda": 1.0,
+  "unshift_critic": true,
+  "xy_scale": 0.05,
+  "action_space": 0,
+  "player_space": 0,
+  "nl": "elu",
+  "action_type": "custom",
+  "fix_scopes": true,
+  "experience_length": 80,
+  "reload": 1,
+  "act_every": 3,
+  "delay": 2,
+  "stage": "battlefield",
+  "char": "falcon",
+  "enemies": "cpu",
+  "enemy_reload": 3600,
+  "agents": 80,
+  "name": "ActorCritic_recurrent_unshift_critic_delay_2_char_falcon_enemies_cpu"
+}
